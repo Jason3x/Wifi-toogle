@@ -79,7 +79,11 @@ enable_wifi() {
     dialog --msgbox "Wi-Fi successfully activated!" 6 40 > "$CURR_TTY"
     printf "\033c" > "$CURR_TTY"
     pgrep -f gptokeyb | sudo xargs kill -9
-    exit 0
+     
+      # Redémarrer EmulationStation proprement
+  sudo systemctl restart emulationstation &  # Lancer en arrière-plan pour éviter un blocage
+
+  exit 0
 }
 
 # Fonction pour désactiver le Wi-Fi
