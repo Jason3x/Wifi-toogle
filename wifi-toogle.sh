@@ -50,9 +50,9 @@ fi
 
 # Appliquer l'état sauvegardé au démarrage
 if [[ "$SAVED_WIFI_STATUS" == "enabled" ]]; then
-    nmcli radio wifi on
+   sudo nmcli radio wifi on
 else
-    nmcli radio wifi off
+   sudo nmcli radio wifi off
 fi
 
 # Mettre à jour l'état du Wi-Fi après modification
@@ -74,7 +74,7 @@ update_wifi_status() {
 enable_wifi() {
     dialog --infobox "Enabling WiFi..." 3 40 > $CURR_TTY
     sleep 2
-    nmcli radio wifi on
+    sudo nmcli radio wifi on
     update_wifi_status
     dialog --msgbox "Wi-Fi successfully activated!" 6 40 > "$CURR_TTY"
     printf "\033c" > "$CURR_TTY"
@@ -90,7 +90,7 @@ enable_wifi() {
 disable_wifi() {
     dialog --infobox "Disabling WiFi..." 3 40 > $CURR_TTY
     sleep 2
-    nmcli radio wifi off
+    sudo nmcli radio wifi off
     update_wifi_status
     dialog --msgbox "Wi-Fi successfully disabled!" 6 40 > "$CURR_TTY"
     printf "\033c" > "$CURR_TTY"
