@@ -99,7 +99,7 @@ create_updater_script() {
     cat > "$UPDATER_PATH" << 'EOF'
 #!/bin/bash
 THEMES_DIR="/roms/themes"
-UPDATE_INTERVAL=5
+UPDATE_INTERVAL=4
 
 prev_wifi_enabled=""
 
