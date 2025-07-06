@@ -1,5 +1,5 @@
 # Wifi-toggle v2.0
-Script to enable and disable wifi on R36XX
+Script to enable and disable wifi on R36XX. 
 Add support Wi-Fi icon for all theme
 
 # Installation
