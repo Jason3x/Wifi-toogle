@@ -9,3 +9,6 @@
 
 # Warnig
 Only works with the es-theme-nes-box red theme
+
+
+https://ko-fi.com/jason3x
