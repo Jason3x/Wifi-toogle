@@ -364,7 +364,7 @@ MainMenu() {
     case $mainchoices in
         1) install_icons ;;
         2) enable_wifi ;;      
-        3) disable_wifiP ;;
+        3) disable_wifi;;
         4) uninstall_icons ;;
         *) exit_script
     esac
