@@ -1,5 +1,8 @@
+
+This script is old and outdated; please refer to it here.
+
 # New script of wifi toggle 
-https://github.com/Jason3x/wifi-toggle 
+**https://github.com/Jason3x/wifi-toggle** 
 
 # Wifi-toggle v2.0
 - Script to enable and disable wifi on R36XX. 
